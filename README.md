@@ -11,7 +11,7 @@ This is exciting and by the end of this unit we will have given you the all of t
 
 You get to decide what you want to build - as long as it meets the technical requirements outlined below.
 
-**You will be working individually for this project.** You'll be designing and coding the app yourself.
+**You will be working individually for this project** designing and coding the app yourself.
 
 
 ---
