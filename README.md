@@ -106,8 +106,7 @@ You will have a maximum of 10 minutes to present your project following these gu
   
   > Note: Don't underestimate the value of a well crafted `README.md`. The `README.md` introduces your project to prospective employers and forms their first impression of your work!
 
-☐ **Daily commits (the more the better) dating back to the very beginning of the project**. Commit messages should be in the present tense, e.g., "Style landing page" instead of "Styled landing page". **Do not "start over" with a new repo.**
-
+☐ **Daily commits (the more the better) dating back to the very beginning of the project**.
 ---
 
 ## Getting Started
