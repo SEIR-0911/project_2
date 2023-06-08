@@ -71,7 +71,7 @@ You will have a maximum of 10 minutes to present your project following these gu
 
 ### Your App Must:
 
-☐ **Have at least 3 related data entities 
+☐ **Have at least 3 related data entities **
 
 ☐ Be styled such that the app looks and feels similar to apps we use on a daily basis - in other words, **it should have a consistent and polished user interface.**
 
@@ -83,7 +83,7 @@ You will have a maximum of 10 minutes to present your project following these gu
 ☐ Have full CRUD functionality on both front and back end
 
 
-☐ Be **deployed online** (Heroku).
+☐ Be **deployed online** (Heroku or Railway).
 
 
 ---
