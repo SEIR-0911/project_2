@@ -75,6 +75,8 @@ You will have a maximum of 10 minutes to present your project following these gu
 
 ☐ Be styled such that the app looks and feels similar to apps we use on a daily basis - in other words, **it should have a consistent and polished user interface.**
 
+☐ At least 1 Additonal Create Update or Delete functionality across Front and Back End
+
 ### Optionally, Your App May:
 
 ☐ Consume a third-party API.  If you choose to implement this option, it's likely that the data from the API will be a key data resource in your app, therefore it's important to consider how to implement whatever CRUD data operations will apply.  For example, how will data from the API find its way into your database?  Be sure to discuss with an instructor when planning your app's features.
@@ -122,11 +124,6 @@ You will have a maximum of 10 minutes to present your project following these gu
 
 Lots of the web applications you interact with on a daily basis can provide inspiration for this project as most are full-stack apps.  That is, they manipulate and display data.
 
-#### DO NOT Choose Non-CRUD Applications Such As:
-
-- Games
-- Portfolio, or presentational pages
-- Marketing or content-oriented websites
 
 #### Good Examples
 
