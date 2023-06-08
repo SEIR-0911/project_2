@@ -1,5 +1,7 @@
 <img src="https://i.imgur.com/QgojyYY.png" width="400">
 
+## SEIR 0508
+
 # Project 2<br>Node/Express/MongoDB<br>Full-stack Application
 
 ## Overview
@@ -7,7 +9,6 @@
 This second project will be your first adventure into **building a full-stack 
 application.** You'll be **building a Node/Express/MongoDB app** from the ground up yourself.
 
-This is exciting and by the end of this unit we will have given you the all of the tools needed to build your app.
 
 You get to decide what you want to build - as long as it meets the technical requirements outlined below.
 
@@ -75,7 +76,9 @@ You will have a maximum of 10 minutes to present your project following these gu
 
 ☐ Be styled such that the app looks and feels similar to apps we use on a daily basis - in other words, **it should have a consistent and polished user interface.**
 
-☐ At least 1 Additonal Create Update or Delete functionality across Front and Back End
+☐ Have full CRUD on all models across the Back End
+
+☐ At least 1 Additonal Create Update or Delete functionality on models across Front and Back End
 
 ### Optionally, Your App May:
 
@@ -84,6 +87,7 @@ You will have a maximum of 10 minutes to present your project following these gu
 
 ☐ Have full CRUD functionality on both front and back end
 
+☐ Implement OAuth and a User Model 
 
 ☐ Be **deployed online** (Heroku or Railway).
 
