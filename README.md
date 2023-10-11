@@ -157,7 +157,12 @@ Many simple apps can have their functionality enhanced by implementing the abili
 Another piece of advice:  If you choose to develop an app that has the concept of a shopping cart (eCommerce app), do not attempt to implement the actual payment functionality.  Plus, here's a hint in regards to the data model: a "cart" is simply an "order" that has yet to be paid - in other words, you would only need an `Order` model vs. both `Order` & `Cart` models.
 
 ---
+## Asking For Help
 
+-  Students will have 5 Tokens to redeem for Help Sessions from Monday 10/16 to Thursday 10/19
+-  Each token will get 20 minutes of 1 on 1 help time
+
+---
 ## Plagiarism
 
 - don't do it.
