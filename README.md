@@ -19,7 +19,7 @@ You get to decide what you want to build - as long as it meets the technical req
 
 ## Planning & Presentation Requirements
 
-### Planning - Due by Friday June 9, 9:00 EST:
+### Planning - Due by Friday October 13, 9:00 EST:
 
 - A **[Trello](https://trello.com/) board** with:
     
@@ -37,7 +37,7 @@ You get to decide what you want to build - as long as it meets the technical req
     
     ☐ An **ERD** list containing an ERD identifying the attributes of each Data Entity (one for each Model and embedded schema). The ERD also needs to diagram relationships between the Entities (1:1, 1:M or M:M). Here's a [YouTube video to show you how](https://www.youtube.com/watch?v=QpdhBUYk7Kk).
 
-### Project Presentations - Friday June 16th, 9:00EST :
+### Project Presentations - Friday October 20th, 9:00EST :
 
 You will have a maximum of 10 minutes to present your project following these guidelines:
 
