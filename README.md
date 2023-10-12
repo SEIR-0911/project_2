@@ -20,22 +20,12 @@ You get to decide what you want to build - as long as it meets the technical req
 ## Planning & Presentation Requirements
 
 ### Planning - Due by Friday October 13, 9:00 EST:
+    
+    ☐ An **ERD** list containing an ERD identifying the attributes of each Data Entity (one for each Model and embedded schema). The ERD also needs to diagram relationships between the Entities (1:1, 1:M or M:M)
 
-- A **[Trello](https://trello.com/) board** with:
-    
-    ☐ **User Stories**, each moving from left to right in the following 
-      three lists in your board:<br>
-      	- **User Stories**<br>
-      	- **Current/MVP**<br>
-      	- **Completed**<br>
-      <br>**User Stories** must follow the following template:<br>**_As a \<user role\>, I want \<feature\>, because \<reason\>._**<br>The _reason_ is optional if it's blatantly obvious.
-      <br><br>Prioritize your user stories 
-      <br><br>Then move the stories that make up the MVP to the Current/MVP list (in the order that you want to implement them) leaving behind the "real" optional/ice box features.
-      <br><br>When all of the completed stories have been moved to the Completed list, move the highest-priority Ice Box story to the Current/MVP list and implement it, etc.
-    
-    ☐ A **Wireframes** list containing wireframes for the app's main pages of functionality, e.g. Landing Page, Posts Index Page, Favorite Posts Page, Add Post Page, etc.
-    
-    ☐ An **ERD** list containing an ERD identifying the attributes of each Data Entity (one for each Model and embedded schema). The ERD also needs to diagram relationships between the Entities (1:1, 1:M or M:M). Here's a [YouTube video to show you how](https://www.youtube.com/watch?v=QpdhBUYk7Kk).
+     ☐ Wireframe designs for your front end
+     
+     ☐ User Stories in your Readme for what you want your projects to contain
 
 ### Project Presentations - Friday October 20th, 9:00EST :
 
