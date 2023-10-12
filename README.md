@@ -21,11 +21,15 @@ You get to decide what you want to build - as long as it meets the technical req
 
 ### Planning - Due by Friday October 13, 9:00 EST:
     
-    -  An **ERD** list containing an ERD identifying the attributes of each Data Entity (one for each Model and embedded schema). The ERD also needs to diagram relationships between the Entities (1:1, 1:M or M:M)
+    - A new Github Repo with your Project's name (DO NOT NAME THE REPO PROJECT2!) with a Readme containing all of your relevant information
+    
+    - An **ERD** list containing an ERD identifying the attributes of each Data Entity (one for each Model and embedded schema). The ERD also needs to diagram relationships between the Entities (1:1, 1:M or M:M)
 
     -  Wireframe designs for your front end
      
     -  User Stories in your Readme for what you want your projects to contain
+
+    - MVP and Stretch Goals for your Projects
 
 ### Project Presentations - Friday October 20th, 9:00EST :
 
@@ -141,16 +145,17 @@ So much of the Internet is CRUD apps!
   - Personal planner
   - Customer management
   - Payroll/Accounting
+ 
+- We do not like students making Mock ECommerce sites, if you do want to work on something like this it needs to be different in scope and functionality than our Hackathon Projects
 
 Many simple apps can have their functionality enhanced by implementing the ability of users to comment on, and/or like/favorite items. 
-
-Another piece of advice:  If you choose to develop an app that has the concept of a shopping cart (eCommerce app), do not attempt to implement the actual payment functionality.  Plus, here's a hint in regards to the data model: a "cart" is simply an "order" that has yet to be paid - in other words, you would only need an `Order` model vs. both `Order` & `Cart` models.
 
 ---
 ## Asking For Help
 
 -  Students will have 5 Tokens to redeem for Help Sessions from Monday 10/16 to Thursday 10/19
 -  Each token will get 20 minutes of 1 on 1 help time
+-  Office/TA Hours will continue at the usual times through Project Week
 
 ---
 ## Plagiarism
@@ -158,5 +163,7 @@ Another piece of advice:  If you choose to develop an app that has the concept o
 - don't do it.
 
 - if you have further questions, just ask
+
+- ChatGPT can be dangerous for something like this. If you do use it, let us know which parts come from it, and make sure to test each functionality before moving on to the next step
 
 ---
