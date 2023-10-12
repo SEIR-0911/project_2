@@ -21,11 +21,11 @@ You get to decide what you want to build - as long as it meets the technical req
 
 ### Planning - Due by Friday October 13, 9:00 EST:
     
-    ☐ An **ERD** list containing an ERD identifying the attributes of each Data Entity (one for each Model and embedded schema). The ERD also needs to diagram relationships between the Entities (1:1, 1:M or M:M)
+    -  An **ERD** list containing an ERD identifying the attributes of each Data Entity (one for each Model and embedded schema). The ERD also needs to diagram relationships between the Entities (1:1, 1:M or M:M)
 
-     ☐ Wireframe designs for your front end
+    -  Wireframe designs for your front end
      
-     ☐ User Stories in your Readme for what you want your projects to contain
+    -  User Stories in your Readme for what you want your projects to contain
 
 ### Project Presentations - Friday October 20th, 9:00EST :
 
