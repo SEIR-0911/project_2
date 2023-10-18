@@ -1,17 +1,14 @@
 const mongoose = require('mongoose')
-const calenderSchema = require('./calender')
+const streakSchema = require('./streaks')
 const goalSchema = require('./goals')
-const habitSchema = require('./habit')
-const trophySchema = require('./trophy')
+const userSchema = require('./user')
 
-const Calender = mongoose.model('Calender', calenderSchema)
+const Streak = mongoose.model('Streak', streakSchema)
 const Goal = mongoose.model('Goal', goalSchema)
-const Habit = mongoose.model('Habit', habitSchema)
-const Trophy = mongoose.model('Trophy', trophySchema)
+const User = mongoose.model('User', userSchema)
 
 module.exports = {
-   Calender,
+   Streak,
    Goal,
-   Habit,
-   Trophy
+   User
 }

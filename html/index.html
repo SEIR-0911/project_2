@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Daily goals - QuotaQuest</title>
+    <link rel="stylesheet" href="/assets/style.css" />
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script defer src="/assets/script.js"></script>
+  </head>
+
+  <body>
+    <header class="top">
+      <img class="logo" src="../images/books.vertical.circle.fill.svg" alt="" />
+      <!-- SHOULD THIS BE A H1 IN THIS AREA? -->
+      <!-- TWO DIVS TO ALIGN FROM LEFT TO RIGHT? -->
+      <div class="title">
+        <p><a href="index.html">QuotaQuest</a></p>
+      </div>
+
+      <div class="logout"><a href="#">Logout</a></div>
+   </header>
+
+    <nav class="navbar">
+      <div class="container">
+        <div class="navLeft"><a href="goals.html">Manage Goals</a></div>
+        
+        
+        <button data-open-modal type="button" class="primary-button shadow-main circle"><img src="../images/plus.svg"></button>
+        
+       <dialog data-modal class="modal">
+         <div class="modal-title">Set up a new Quota</div>         
+            <div id="quickAdd">
+               <button class="quick" data-quickAdd-button>Quick add</button>
+               <button class="custom" data-customAdd-button>Custom add</button>
+            </div>
+            <div id="suggestions" class="suggestions">
+               <button class="sugg1 shadow-main" data-suggestion1-button>Go to bed early</button>
+               <button class="sugg2 shadow-main" data-suggestion2-button>Eat healthy</button>
+               <button class="sugg3 shadow-main" data-suggestion3-button>No alcohol</button>
+               <button class="sugg4 shadow-main" data-suggestion4-button>Walk the dog</button>
+            </div>
+            <div class="difficulty">Quota difficulty</div>
+            <div class="difficulty-btns">
+               <button class="easy shadow-main" data-easy-button>Easy (50 pts)</button>
+               <button class="medium shadow-main" data-medium-button>Medium (100 pts)</button>
+               <button class="hard shadow-main" data-hard-button>Hard (150 pts)</button>
+            </div>
+            <div class="confirm">
+               <button class="cancel shadow-main" data-close-modal>Cancel</button>
+               <button class="add shadow-main" data-add-button>Add</button>
+         </dialog>
+            
+            <div class="navRight"><a href="#">Streaks</a></div>
+      </div>
+    </div>
+    </nav>
+    <header class="header">
+      <div class="container">
+         <div>
+            <h1>Daily Quotas</h1>
+         </div>
+         <div>
+            <input type="date" id="calendar" name="calendar" value="2023-10-16" min="2023-01-01" max="2030-12-31" />
+         </div>
+      </div>
+   </header>
+
+   <section class="tiles">
+      <div class="container">
+         <div class="tile">
+            <button class="doneBtn">Done!</button><br><br>
+            Make the bed = 50
+         </div>
+         <div class="tile">
+            <button class="doneBtn2">Done!</button><br><br>
+            Work out - 10min = 100
+         </div>
+         <div class="tile">
+            <button class="doneBtn3">Done!</button><br><br>
+            Eat Healthy = 150
+         </div>
+      </div>
+   </section>
+
+    
+
+    <!-- <div class="grid-container">
+      <div class="grid-item item1">
+         <button class="doneBtn">Done!</button><br><br>
+         Make the bed = 50
+      </div>
+
+      <div class="grid-item item2">
+         <button class="doneBtn3">Done!</button><br><br>
+         Eat Healthy = 150
+      </div>
+
+      <div class="grid-item item3">
+         <button class="doneBtn2">Done!</button><br><br>
+         Work out - 10min = 100
+      </div>
+
+      <div class="grid-item item4">Momentum medals
+         <div id="totalPts">
+            <p>Total: 0</p>
+         </div>
+         <div id="myProgress">
+            <div id="myBar"></div> -->
+            <!-- <label for="myBar">Today's Points</label><progress id="myBar" value="0" max="1000"></progress>
+         </div>
+
+      </div>
+
+    </div> -->
+  
+
+    <footer id="footer">
+      <div class="footerContainer">
+         <img class="logoFooter" src="../images/books.vertical.circle.fill.svg" alt="" />
+         <div class="title">
+           <p>QuotaQuest</p>
+         </div>
+         <div>
+            <p>© 2022 QuotaQuest. All rights reserved.
+               QuotaQuest, Boston MA</p>
+         </div>
+    </footer>
+  </body>
+</html>
