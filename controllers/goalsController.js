@@ -13,9 +13,8 @@ const getOneGoal = async (req, res) => {
    try {
       const { name } = req.params
       console.log(name)
-      const goal = await Goal.findOne({name: name})
-      .populate('goals')
-      .exec()
+      const goal = await Goal.findOne({id})
+     
       console.log(goal)
       if (goal) {
          return res.json(goal)
@@ -30,6 +29,7 @@ const createGoal = async (req, res) => {
    try{
    const goal = await new Goal(req.body)
    await goal.save()
+   // res.redirect?
    return res.status(201).json({
       goal,
    })

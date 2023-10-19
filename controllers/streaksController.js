@@ -14,8 +14,7 @@ const getOneStreak = async (req, res) => {
       const { name } = req.params
       console.log(name)
       const streak = await Streak.findOne({name: name})
-      .populate('streaks')
-      .exec()
+   
       console.log(streak)
       if (streak) {
          return res.json(streak)

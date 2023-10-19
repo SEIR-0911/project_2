@@ -12,8 +12,7 @@
   <body>
     <header class="top">
       <img class="logo" src="../images/books.vertical.circle.fill.svg" alt="" />
-      <!-- SHOULD THIS BE A H1 IN THIS AREA? -->
-      <!-- TWO DIVS TO ALIGN FROM LEFT TO RIGHT? -->
+
       <div class="title">
         <p><a href="index.html">QuotaQuest</a></p>
       </div>
@@ -28,30 +27,41 @@
         
         <button data-open-modal type="button" class="primary-button shadow-main circle"><img src="../images/plus.svg"></button>
         
-       <dialog data-modal class="modal">
+
+
+
+       <dialog id="modal">
          <div class="modal-title">Set up a new Quota</div>         
-            <div id="quickAdd">
-               <button class="quick" data-quickAdd-button>Quick add</button>
-               <button class="custom" data-customAdd-button>Custom add</button>
+         <form id="create-quota-form">
+            <div>
+               <label for="newQuota" class="newQuota">New Quota: </label>
+               <input type="text" placeholder="Enter new task" name="text-field" class="newQuota" id="newQuota">
             </div>
-            <div id="suggestions" class="suggestions">
-               <button class="sugg1 shadow-main" data-suggestion1-button>Go to bed early</button>
-               <button class="sugg2 shadow-main" data-suggestion2-button>Eat healthy</button>
-               <button class="sugg3 shadow-main" data-suggestion3-button>No alcohol</button>
-               <button class="sugg4 shadow-main" data-suggestion4-button>Walk the dog</button>
-            </div>
+
             <div class="difficulty">Quota difficulty</div>
+
             <div class="difficulty-btns">
-               <button class="easy shadow-main" data-easy-button>Easy (50 pts)</button>
-               <button class="medium shadow-main" data-medium-button>Medium (100 pts)</button>
-               <button class="hard shadow-main" data-hard-button>Hard (150 pts)</button>
-            </div>
-            <div class="confirm">
-               <button class="cancel shadow-main" data-close-modal>Cancel</button>
-               <button class="add shadow-main" data-add-button>Add</button>
-         </dialog>
+               <input type="radio" id="difficulty1" class="diff" name="difficultyBtn" value="Easy (50 pts)">
+               <label for="difficulty1" class="label label-1">Easy (50 pts)</label>
+
+               <input type="radio" id="difficulty2" class="diff" name="difficultyBtn" value="Medium (100 pts)">
+               <label for="difficulty2" class="label label-2">Medium (100 pts)</label>
+
+               <input type="radio" id="difficulty3" class="diff" name="difficultyBtn" value="Hard (150 pts)">
+               <label for="difficulty3" class="label label-3">Hard (150 pts)</label>
+            </div>            
+               <button id="cancel" value="cancel" formmethod="dialog">Cancel</button>
+               <button  id="addBtn" value="Add Quota">Add Quota</button>
             
+            </form>
+         </dialog>
+            <output></output>
+
+
+
+
             <div class="navRight"><a href="#">Streaks</a></div>
+
       </div>
     </div>
     </nav>

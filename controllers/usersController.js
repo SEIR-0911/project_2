@@ -14,8 +14,7 @@ const getOneUser = async (req, res) => {
       const { name } = req.params
       console.log(name)
       const user = await User.findOne({name: name})
-      .populate('Users')
-      .exec()
+
       console.log(user)
       if (user) {
          return res.json(user)

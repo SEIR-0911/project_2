@@ -141,7 +141,9 @@ body {
    background-color: #333333;
 }
 
-
+.highlight-1 {
+   background: red;
+ }
 
 
 
@@ -190,11 +192,11 @@ h1 {
 
 /* ====== GRID CSS ====== */
 
-.grid-container {
+/* .grid-container {
    min-height: 100vh;
    display: grid;
    grid-gap: 2em;
-   padding: 1em;
+   padding: 1em; 
 }
 
 .grid-item {
@@ -228,7 +230,7 @@ h1 {
    width: 100%;
    height: 1.5em;
    color: #F6C516;
-}
+} */
 
 
 
@@ -273,155 +275,18 @@ h1 {
 
 .modal-title {
    font-size: 2em;
+   padding-bottom: 10px;
+   margin-bottom: 20px;
+   border-bottom: 1px solid #333;
 }
 
-#quickAdd {
-   display: flex;
-   width: 100%;
-   padding: 10px 0;
-}
-
-.quick {
-   width: 50%;
-   padding-top: 18px;
-   padding-bottom: 18px;
-   font-size: 1em;
-   font-weight: bold;
-   color: #222;
-   background-color: #eee;
-   border: 1px solid #153544;
-   border-radius: 5px 0 0 5px;
-}
-.quick:hover {
-   width: 50%;
-   font-size: 1em;
-   font-weight: bold;
-   color: #EEEEEE;
-   background-color: #285867;
-   border: 1px solid #153544;
-   border-radius: 5px 0 0 5px;
-}
-
-.custom {
-   width: 50%;
-   padding-top: 18px;
-   padding-bottom: 18px;
-   font-size: 1em;
-   font-weight: bold;
-   color: #222;
-   background-color: #eee;
-   border: 1px solid #153544;
-   border-radius: 0 5px 5px 0;
-}
-
-.custom:hover {
-   width: 50%;
-   font-size: 1em;
-   font-weight: bold;
-   color: #EEEEEE;
-   background-color: #285867;
-   border: 1px solid #153544;
-   border-radius: 0 5px 5px 0;
-}
-
-.suggestions {
-   display: flex;
-   flex-wrap: wrap;
-   justify-content: space-between;
-   align-items: center;
-}
-.sugg1 {
-   width: 49%;
-   padding-top: 5px;
-   padding-bottom: 5px;
-   margin-bottom: 5px;
-   font-size: 1em;
-   font-weight: bold;
-   color: #222;
-   background-color: #eee;
-   border: 1px solid #153544;
-   border-radius: 5px;
-}
-
-.sugg1:hover {
-   width: 49%;
-   font-size: 1em;
-   font-weight: bold;
-   color: #EEEEEE;
-   background-color: #285867;
-   border: 1px solid #153544;
-   border-radius: 5px;
-}
-
-.sugg2 {
-   width: 49%;
-   padding-top: 5px;
-   padding-bottom: 5px;
-   margin-bottom: 5px;
-   font-size: 1em;
-   font-weight: bold;
-   color: #222;
-   background-color: #eee;
-   border: 1px solid #153544;
-   border-radius: 5px;
-}
-
-.sugg2:hover {
-   width: 49%;
-   font-size: 1em;
-   font-weight: bold;
-   color: #EEEEEE;
-   background-color: #285867;
-   border: 1px solid #153544;
-   border-radius: 5px;
-}
-.sugg3 {
-   width: 49%;
-   padding-top: 5px;
-   padding-bottom: 5px;
-   margin-bottom: 5px;
-   font-size: 1em;
-   font-weight: bold;
-   color: #222;
-   background-color: #eee;
-   border: 1px solid #153544;
-   border-radius: 5px;
-}
-
-.sugg3:hover {
-   width: 49%;
-   font-size: 1em;
-   font-weight: bold;
-   color: #EEEEEE;
-   background-color: #285867;
-   border: 1px solid #153544;
-   border-radius: 5px;
-}
-.sugg4 {
-   width: 49%;
-   padding-top: 5px;
-   padding-bottom: 5px;
-   margin-bottom: 5px;
-   font-size: 1em;
-   font-weight: bold;
-   color: #222;
-   background-color: #eee;
-   border: 1px solid #153544;
-   border-radius: 5px;
-}
-
-.sugg4:hover {
-   width: 49%;
-   font-size: 1em;
-   font-weight: bold;
-   color: #EEEEEE;
-   background-color: #285867;
-   border: 1px solid #153544;
-   border-radius: 5px;
+.newQuota {
+   display: inline-flex;
+   font-size: 1.2rem;
 }
 
 .difficulty {
-   font-size: 1.3em;
+   font-size: 1.4rem;
    padding-top: 15px;
    padding-bottom: 5px;
 }
@@ -429,80 +294,48 @@ h1 {
 .difficulty-btns {
    display: flex;
    flex-direction: column;
+   align-items: center;
+   justify-content: center;
+   font-size: 1.2rem;
 }
 
-.easy {
+.diff {
+   display: none;
+}
+
+.label {
+   width: 99%;
+   text-align: center;
    padding-top: 5px;
    padding-bottom: 5px;
-   margin-bottom: 5px;
-   font-size: 1em;
-   font-weight: bold;
+   background-color: #EEEEEE;
    color: #222;
-   background-color: #eee;
-   border: 1px solid #153544;
-   border-radius: 5px;
-}
-
-.easy:hover {
-   font-size: 1em;
-   font-weight: bold;
-   color: #EEEEEE;
-   background-color: #285867;
-   border: 1px solid #153544;
-   border-radius: 5px;
-}
-.medium {
-   padding-top: 5px;
-   padding-bottom: 5px;
+   border: 2px solid #153544;
+   margin-top: 5px;
    margin-bottom: 5px;
-   font-size: 1em;
-   font-weight: bold;
-   color: #222;
-   background-color: #eee;
-   border: 1px solid #153544;
    border-radius: 5px;
 }
-
-.medium:hover {
-   font-size: 1em;
-   font-weight: bold;
-   color: #EEEEEE;
+#difficulty1:checked ~ .label-1,
+#difficulty2:checked ~ .label-2,
+#difficulty3:checked ~ .label-3
+{
    background-color: #285867;
-   border: 1px solid #153544;
-   border-radius: 5px;
-}
-.hard {
-   padding-top: 5px;
-   padding-bottom: 5px;
-   margin-bottom: 5px;
-   font-size: 1em;
-   font-weight: bold;
-   color: #222;
-   background-color: #eee;
-   border: 1px solid #153544;
-   border-radius: 5px;
-}
-
-.hard:hover {
-   font-size: 1em;
-   font-weight: bold;
    color: #EEEEEE;
-   background-color: #285867;
-   border: 1px solid #153544;
-   border-radius: 5px;
 }
 
 
 .confirm {
    display: flex;
+   flex-wrap: nowrap;
    justify-content: space-between;
    padding-top: 10px;
 }
 
-.cancel {
-   width: 49%;
-   padding-top: 5px;
-   padding-bottom: 5px;
+#cancel {
+   width: 49.4%;
+   padding-top: 8px;
+   padding-bottom: 8px;
+   margin-top: 15px;
    margin-bottom: 5px;
    font-size: 1em;
    font-weight: bold;
@@ -512,8 +345,8 @@ h1 {
    border-radius: 5px;
 }
 
-.cancel:hover {
-   width: 49%;
+#cancel:hover {
+   width: 49.4%;
    font-size: 1em;
    font-weight: bold;
    color: #7B2A10;
@@ -522,10 +355,10 @@ h1 {
    border-radius: 5px;
 }
 
-.add {
-   width: 49%;
-   padding-top: 5px;
-   padding-bottom: 5px;
+#add {
+   width: 49.4%;
+   padding-top: 8px;
+   padding-bottom: 8px;
    margin-bottom: 5px;
    font-size: 1em;
    font-weight: bold;
@@ -535,8 +368,8 @@ h1 {
    border-radius: 5px;
 }
 
-.add:hover {
-   width: 49%;
+#add:hover {
+   width: 49.4%;
    font-size: 1em;
    font-weight: bold;
    color: #EEEEEE;
