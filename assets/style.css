@@ -243,7 +243,8 @@ h1 {
 /* ====== FOOTER CSS ====== */
 
 #footer {
-   position: relative;
+   position: absolute;
+   bottom: 0;
    margin: auto 0;
    width: 100%;
 }
@@ -262,7 +263,13 @@ h1 {
    padding-right: 15px;
 }
 
+.footerText {
+   font-size: .75rem;
+   color: #333;
+   text-align: right;
+   white-space: nowrap;
 
+}
 
 
 
@@ -385,6 +392,8 @@ h1 {
  dialog {
    border-radius : 1rem;
    min-width     : 31rem;
+   border: 5px solid #153544;
+   background-color: #EEEEEE;
    }
  dialog::backdrop {
    background: #285867a2;
@@ -395,7 +404,7 @@ h1 {
  dialog > form > label {
    display   : block;
    margin    : 0.8em;
-   font-size : .9rem;
+   font-size : 1.2rem;
    }
  fieldset > label {
    display      : inline-block;
@@ -403,9 +412,15 @@ h1 {
    }
  input:not([type=radio]) {
    display    : block;
+   font-size: 1.2rem;
    }
  dialog button {
    margin-top   : 1rem;
    margin-right : 1rem;
    width        : 29%;
+   padding: 5px;
+   cursor: pointer;
+   font-size: large;
+   border-radius: 20px;
+   background-color: #fff;
    }
