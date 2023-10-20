@@ -25,24 +25,16 @@ const main = async () => {
    const goals = [
       {
          title: 'Go to bed early',
-         level: 'Easy (50pts)',
-         confirm: true,
+         level: 'Easy 50 pts'     
       },
       {
          title: 'Eat healthy',
-         level: 'Hard (150pts)',
-         confirm: true,
+         level: 'Medium 100 pts'
       },
       {
          title: 'No alcohol',
-         level: 'Hard (150pts)',
-         confirm: true,
-      },
-      {
-         title: 'Walk the dog',
-         level: 'Medium (100pts)',
-         confirm: true,
-      },
+         level: 'Hard 150 pts'
+      }
    ]
 
    await Streak.insertMany(streaks)

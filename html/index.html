@@ -22,48 +22,35 @@
 
     <nav class="navbar">
       <div class="container">
-        <div class="navLeft"><a href="goals.html">Manage Goals</a></div>
-        
-        
-        <button data-open-modal type="button" class="primary-button shadow-main circle"><img src="../images/plus.svg"></button>
-        
+        <div class="navLeft"><a href="#">Manage Goals</a></div>        
+        <button type="button" id="bt-open-dialog" class="primary-button shadow-main circle"><img src="../images/plus.svg"></button>
+
+        <dialog id="modal-dialog">
+         <form method="dialog">
+           <h2>Set up a new Quota</h2>
+           <label>
+             New Quota: 
+             <input name="title" type="text" placeholder="Enter new task" value="" required >
+           </label>
+       
+           <fieldset>
+             <legend> Quota difficulty </legend>
+             <label> <input name="level" type="radio" value="(50 pts)" required >  Easy (50 pts) </label>
+             <label> <input name="level" type="radio" value="(100 pts)"> Medium (100 pts) </label>
+             <label> <input name="level" type="radio" value="(150 pts)"> Hard (150 pts) </label>
+           </fieldset>
+       
+           <button value="OK">Add Quota</button>
+           <button type="reset">Reset</button>
+           <button type="button" name="btCancel">Cancel</button>
+         </form>
+       </dialog>
 
 
 
-       <dialog id="modal">
-         <div class="modal-title">Set up a new Quota</div>         
-         <form id="create-quota-form">
-            <div>
-               <label for="newQuota" class="newQuota">New Quota: </label>
-               <input type="text" placeholder="Enter new task" name="text-field" class="newQuota" id="newQuota">
-            </div>
-
-            <div class="difficulty">Quota difficulty</div>
-
-            <div class="difficulty-btns">
-               <input type="radio" id="difficulty1" class="diff" name="difficultyBtn" value="Easy (50 pts)">
-               <label for="difficulty1" class="label label-1">Easy (50 pts)</label>
-
-               <input type="radio" id="difficulty2" class="diff" name="difficultyBtn" value="Medium (100 pts)">
-               <label for="difficulty2" class="label label-2">Medium (100 pts)</label>
-
-               <input type="radio" id="difficulty3" class="diff" name="difficultyBtn" value="Hard (150 pts)">
-               <label for="difficulty3" class="label label-3">Hard (150 pts)</label>
-            </div>            
-               <button id="cancel" value="cancel" formmethod="dialog">Cancel</button>
-               <button  id="addBtn" value="Add Quota">Add Quota</button>
-            
-            </form>
-         </dialog>
-            <output></output>
-
-
-
-
-            <div class="navRight"><a href="#">Streaks</a></div>
-
+         <div class="navRight"><a href="#">Streaks</a></div>
       </div>
-    </div>
+
     </nav>
     <header class="header">
       <div class="container">
@@ -78,51 +65,9 @@
 
    <section class="tiles">
       <div class="container">
-         <div class="tile">
-            <button class="doneBtn">Done!</button><br><br>
-            Make the bed = 50
-         </div>
-         <div class="tile">
-            <button class="doneBtn2">Done!</button><br><br>
-            Work out - 10min = 100
-         </div>
-         <div class="tile">
-            <button class="doneBtn3">Done!</button><br><br>
-            Eat Healthy = 150
-         </div>
+         
       </div>
    </section>
-
-    
-
-    <!-- <div class="grid-container">
-      <div class="grid-item item1">
-         <button class="doneBtn">Done!</button><br><br>
-         Make the bed = 50
-      </div>
-
-      <div class="grid-item item2">
-         <button class="doneBtn3">Done!</button><br><br>
-         Eat Healthy = 150
-      </div>
-
-      <div class="grid-item item3">
-         <button class="doneBtn2">Done!</button><br><br>
-         Work out - 10min = 100
-      </div>
-
-      <div class="grid-item item4">Momentum medals
-         <div id="totalPts">
-            <p>Total: 0</p>
-         </div>
-         <div id="myProgress">
-            <div id="myBar"></div> -->
-            <!-- <label for="myBar">Today's Points</label><progress id="myBar" value="0" max="1000"></progress>
-         </div>
-
-      </div>
-
-    </div> -->
   
 
     <footer id="footer">

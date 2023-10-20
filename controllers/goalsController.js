@@ -1,21 +1,19 @@
 const { Goal } = require('../models')
 
-const getAllGoals = async (req, res) => {
+
+async function getAllGoals(req, res) {
    try {
-      const goals = await Goal.find({})
+      const goals = await Goal.find()
       res.json(goals)
    } catch (e) {
       return res.status(500).send(e.message)
    }
 }
 
-const getOneGoal = async (req, res) => {
+async function getOneGoal(req, res) {
    try {
-      const { name } = req.params
-      console.log(name)
-      const goal = await Goal.findOne({id})
-     
-      console.log(goal)
+      const id = req.params.id
+      const goal = await Goal.findById(id)     
       if (goal) {
          return res.json(goal)
       }
@@ -25,20 +23,21 @@ const getOneGoal = async (req, res) => {
    }
 }
 
-const createGoal = async (req, res) => {
+async function createGoal(req, res) {
    try{
    const goal = await new Goal(req.body)
+   console.log(req.body)
    await goal.save()
    // res.redirect?
    return res.status(201).json({
-      goal,
+      goal
    })
    } catch (e) {
       return res.status(500).json({ error: e.message })
    }
 }
 
-const updateGoal = async (req, res) => {
+async function updateGoal(req, res) {
    try {
       let id = req.params.id
       let goal = await Goal.findByIdAndUpdate(id, req.body, { new: true })
@@ -51,7 +50,7 @@ const updateGoal = async (req, res) => {
    }
 }
 
-const deleteGoal = async (req, res) => {
+async function deleteGoal(req, res) {
    try {
       const id = req.params.id
       let goal = await Goal.findByIdAndDelete(id)
@@ -63,7 +62,6 @@ const deleteGoal = async (req, res) => {
       return res.status(500).send(e.message)
    }
 }
-
 
 module.exports = {
    getAllGoals,

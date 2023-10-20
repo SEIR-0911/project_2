@@ -1,19 +1,22 @@
 const { Streak } = require('../models')
 
+
+
+
 const getAllStreaks = async (req, res) => {
    try {
-      const streaks = await Streak.find({})
+      const streaks = await Streak.find()
       res.json(streaks)
    } catch (e) {
       return res.status(500).send(e.message)
    }
 }
 
-const getOneStreak = async (req, res) => {
+async function getOneStreak(req, res) {
    try {
-      const { name } = req.params
-      console.log(name)
-      const streak = await Streak.findOne({name: name})
+      const id = req.params
+      console.log(id)
+      const streak = await Streak.findById(id)
    
       console.log(streak)
       if (streak) {
@@ -25,19 +28,19 @@ const getOneStreak = async (req, res) => {
    }
 }
 
-const createStreak = async (req, res) => {
+async function createStreak (req, res)  {
    try{
    const streak = await new Streak(req.body)
    await streak.save()
    return res.status(201).json({
-      streak,
+      streak
    })
    } catch (e) {
       return res.status(500).json({ error: e.message })
    }
 }
 
-const updateStreak = async (req, res) => {
+async function updateStreak(req, res) {
    try {
       let id = req.params.id
       let streak = await Streak.findByIdAndUpdate(id, req.body, { new: true })
@@ -50,7 +53,7 @@ const updateStreak = async (req, res) => {
    }
 }
 
-const deleteStreak = async (req, res) => {
+async function deleteStreak(req, res) {
    try {
       const id = req.params.id
       let streak = await Streak.findByIdAndDelete(id)
@@ -62,7 +65,6 @@ const deleteStreak = async (req, res) => {
       return res.status(500).send(e.message)
    }
 }
-
 
 module.exports = {
    getAllStreaks,
