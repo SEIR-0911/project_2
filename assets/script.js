@@ -1,32 +1,45 @@
-const Btn_Dialog  = document.querySelector('#bt-open-dialog')
-const modalDialog = document.querySelector('#modal-dialog')
-const modalForm   = modalDialog.querySelector('form')
-const displayArea = document.querySelector('#newTiles')
+const form = document.getElementById("form");
 
+form.addEventListener("submit", function (e) {
+  e.preventDefault();
 
-Btn_Dialog.onclick = () => {
-  modalDialog.returnValue = null
-  modalDialog.showModal()
-  }
+  const payload = new FormData(form);
 
-modalForm.btCancel.onclick = () => {
-  modalDialog.close()
-  }
-modalDialog.onclose = () => {
-  console.clear();
-  if ( modalDialog.returnValue === 'OK' ) {
-  const formData = new FormData(modalForm)
-  const formObject = Object.fromEntries(formData)
-   axios.post('http://localhost:3001/goals', formObject)
-   .then(response => {
-      console.log('Quotas created:', response.data)
-      displayArea.innerHTML = `New goal: ${JSON.stringify(response.data)}`
-   })
-   .catch (error => {
-      console.error('Error sending data to backend:', error)
-   })
-} else {
-   console.log('Goal does not exsist!')
+  const goalData = {};
+  payload.forEach((value, key) => {
+    goalData[key] = value;
+  });
+
+  fetch("/goals", {
+    method: "POST",
+    headers: {
+      "Content-Type": "application/json",
+    },
+    body: JSON.stringify(goalData),
+  })
+    .then((response) => {
+      if (!response.ok) {
+        throw new Error("Network response was not ok");
+      }
+      return response.json();
+    })
+    .then((data) => {
+      console.log(data.message, data.goal);
+
+      renderGoal(data.goal);
+    })
+    .catch((err) => {
+      console.error("Error:", err);
+    });
+});
+
+function renderGoal(goal) {
+  const goalsContainer = document.getElementById("goals-container");
+
+  const goalElement = document.createElement("div");
+  goalElement.innerHTML = `<p>${goal.title}</p><p>${
+    goal.level
+  }</p><p>${new Date(goal.date).toDateString()}</p>`;
+
+  goalsContainer.appendChild(goalElement);
 }
-}
-

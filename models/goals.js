@@ -1,10 +1,34 @@
-const { Schema } = require('mongoose')
-const goalSchema = new Schema (
-   {
-      title: { type: String, required: true },
-      level: { type: String, required: true }
-   },
+const { Schema } = require("mongoose");
+const goalSchema = new Schema(
+  {
+    title: {
+      type: String,
+      required: true,
+    },
 
-   { timestamps: true })
+    date: {
+      type: Date,
+      required: false,
+    },
 
-   module.exports = goalSchema
+    level: {
+      type: String,
+      required: true,
+      enum: ["Easy", "Medium", "Hard"],
+    },
+    // points: {
+    //   type: Number,
+    //   required: true,
+    //   validate: {
+    //     validator: function (value) {
+    //       return [50, 100, 150].includes(value);
+    //     },
+    //     message: "Invalid points value",
+    //   },
+    // },
+  },
+
+  { timestamps: true }
+);
+
+module.exports = goalSchema;

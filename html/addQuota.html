@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Add a New Quota</title>
+    <link rel="stylesheet" href="/assets/style.css" />
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script defer src="/assets/script.js"></script>
+  </head>
+  <body>
+      <header class="top">
+        <img class="logo" src="../images/books.vertical.circle.fill.svg" alt="" />
+        <div class="title">
+          <p><a href="index.html">QuotaQuest</a></p>
+        </div>
+        <div class="logout"><a href="#">Logout</a></div>
+     </header>
+
+     <form action="./index.html" id="form" method="POST">
+      <h2>Set up a new Quota</h2>
+    
+      <label>
+        New Quota:
+        <input
+          name="title"
+          type="text"
+          placeholder="Enter new task"
+          value=""
+          required
+        />
+      </label>
+    
+      <label>
+        <input
+          type="date"
+          id="calendar"
+          name="calendar"
+          value="2023-10-16"
+          min="2023-01-01"
+          max="2030-12-31"
+        />
+      </label>
+    
+      <fieldset>
+        <legend>Quota difficulty</legend>
+        <label>
+          <input name="level" type="radio" value="(50 pts)" required /> Easy (50
+          pts)
+        </label>
+    
+        <label>
+          <input name="level" type="radio" value="(100 pts)" /> Medium (100 pts)
+        </label>
+    
+        <label>
+          <input name="level" type="radio" value="(150 pts)" /> Hard (150 pts)
+        </label>
+      </fieldset>
+    
+      <button type="submit" value="createGoal">Add Quota</button>
+      <button type="reset">Reset</button>
+      <button type="button" name="btCancel">Cancel</button>
+    </form>
+    
+    <a href="/html/index.html">Back to Daily Quotas</a>
+
+    <footer id="footer">
+      <div class="footerContainer">
+         <img class="logoFooter" src="../images/books.vertical.circle.fill_dark.svg" alt="" />
+         <div class="title">
+           <p>QuotaQuest</p>
+         </div>
+         <div>
+            <p class="footerText">© 2022 QuotaQuest. All rights reserved.</p>
+               <p class="footerText">QuotaQuest, Boston MA</p>
+         </div>
+    </footer>
+  </body>
+</html>
+
+
