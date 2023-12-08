@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Daily goals - QuotaQuest</title>
+    <script src="./Daily goals - QuotaQuest_files/axios.min.js"></script>
+    <script defer="" src="./Daily goals - QuotaQuest_files/script.js"></script>
+  </head>
+
+  <body>
+    <header class="top">
+      <img class="logo" src="../images/books.vertical.circle.fill.svg" alt="" />
+
+      <div class="title">
+        <p><a href="/public/index.html">QuotaQuest</a></p>
+      </div>
+
+      <div class="logout">
+        <a href="#">Logout</a>
+      </div>
+    </header>
+
+    <nav class="navbar">
+      <div class="container">
+        <div class="navLeft">
+          <a href="#">Manage Goals</a>
+        </div>
+
+        <button
+          data-open-modal=""
+          type="button"
+          class="primary-button shadow-main circle"
+        >
+          <img src="../images/Plus.svg" />
+        </button>
+
+        <div class="navRight">
+          <a href="#">Streaks</a>
+        </div>
+      </div>
+    </nav>
+    <header class="header">
+      <div class="container">
+        <div>
+          <h1>Daily Quotas</h1>
+        </div>
+        <div>
+          <input
+            type="date"
+            id="calendar"
+            name="calendar"
+            value="2023-10-16"
+            min="2023-01-01"
+            max="2030-12-31"
+          />
+        </div>
+      </div>
+    </header>
+
+    <section class="tiles container">
+      <div id="container"></div>
+    </section>
+
+    <div id="modal" class="modal">
+      <div id="form-modal" class="modal-box">
+        <form id="goal-form">
+          <div class="form-control">
+            <label for="goal-text">New Quota</label>
+            <input
+              type="text"
+              placeholder="Enter new task"
+              name="new-goal"
+              id="new-goal"
+            />
+          </div>
+          <div class="form-control">
+            <label for="goal-text">Goal details</label>
+            <textarea name="text" id="goal-text"></textarea>
+          </div>
+
+          <div class="difficulty">Quota difficulty</div>
+
+          <div class="difficulty-btns">
+            <input
+              type="radio"
+              id="difficulty1"
+              class="diff"
+              name="difficultyBtn"
+              value="(50 pts)"
+            />
+            <label for="difficulty1" class="label label-1">Easy (50 pts)</label>
+
+            <input
+              type="radio"
+              id="difficulty2"
+              class="diff"
+              name="difficultyBtn"
+              value="(Medium: 100 pts)"
+            />
+            <label for="difficulty2" class="label label-2"
+              >Medium (100 pts)</label
+            >
+
+            <input
+              type="radio"
+              id="difficulty3"
+              class="diff"
+              name="difficultyBtn"
+              value="(150 pts)"
+            />
+            <label for="difficulty3" class="label label-3"
+              >Hard (150 pts)</label
+            >
+          </div>
+          <button id="cancel" value="cancel" formmethod="dialog">Cancel</button>
+          <button id="addBtn" value="Add Quota">Add Quota</button>
+        </form>
+      </div>
+    </div>
+
+    <footer id="footer">
+      <div class="footerContainer">
+        <img
+          class="logoFooter"
+          src="../images/books.vertical.circle.fill_dark.svg"
+          alt=""
+        />
+        <div class="title">
+          <p>QuotaQuest</p>
+        </div>
+        <div>
+          <p class="footerText">© 2022 QuotaQuest. All rights reserved.</p>
+          <p class="footerText">QuotaQuest, Boston MA</p>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
