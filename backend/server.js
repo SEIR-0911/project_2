@@ -1,7 +1,7 @@
 const path = require("path");
 const express = require("express");
 require("dotenv").config();
-const PORT = process.env.PORT || 6000;
+const PORT = process.env.PORT || 4000;
 const connectDB = require("./config/db");
 
 connectDB();

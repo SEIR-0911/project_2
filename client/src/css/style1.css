@@ -226,11 +226,12 @@ h1 {
 /* ====== ADD-MODAL CSS ====== */
 
 .modal {
+   display: block;
    border: 5px solid #333;
    border-radius: 5px;
-   background-color: #fff;
-   width: 400px;
-   max-width: 60%;
+   /* background-color: #fff; */
+   /* width: 400px; */
+   /* max-width: 60%; */
 }
 
 .modal-title {

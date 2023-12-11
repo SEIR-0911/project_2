@@ -1,9 +1,21 @@
-import "@fortawesome/fontawesome-free/css/all.css";
-import "./css/style1.css";
+// const modal = document.querySelector("#modal");
+// const modalBtn = document.querySelector("#modal-btn");
 
-const modal = document.querySelector("#modal");
-const modalBtn = document.querySelector("#modal-btn");
+// function open() {
+//   modal.style.display = "block";
+//   console.log("working");
+// }
 
-function open() {}
+// function close() {
+//   modal.style.display = "none";
+// }
 
-modalBtn.addEventListener("click", open);
+// function outsideClick(e) {
+//   if (e.target === modal) {
+//     close();
+//   }
+// }
+
+// modalBtn.addEventListener("click", open);
+// console.log("click");
+// window.addEventListener("click", outsideClick);
